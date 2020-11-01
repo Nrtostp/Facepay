@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+string action_blink
+string action_blink_left_eye
+string action_blink_right_eye
+string action_head_down
+string action_head_up
+string action_lean_head_left
+string action_lean_head_right
+string action_open_mouth
+string app_name
+string hint_come_closer
+string hint_head_down
+string hint_head_higher
+string hint_keep_still
+string hint_light_low
+string hint_move_down
+string hint_move_further
+string hint_move_into_frame
+string hint_move_left
+string hint_move_right
+string hint_move_up
+string hint_occlusion_in_chin
+string hint_occlusion_in_face
+string hint_occlusion_in_left_cheek
+string hint_occlusion_in_left_eye
+string hint_occlusion_in_mouth
+string hint_occlusion_in_nose
+string hint_occlusion_in_right_cheek
+string hint_occlusion_in_right_eye
+string hint_success
+string hint_timeout
+string hint_turn_left
+string hint_turn_right
+string hint_very_good

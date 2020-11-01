@@ -1,0 +1,367 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.qianyri.facepay"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->D:\Works\Facepay\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\Works\Facepay\app\src\main\AndroidManifest.xml
+10
+11    <!-- bmod -->
+12    <!-- 允许联网 -->
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:8:5-67
+13-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:8:22-64
+14    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:10:5-79
+15-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:10:22-76
+16    <!-- 获取wifi网络状态的信息 -->
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:12:5-76
+17-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:12:22-73
+18    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:14:5-68
+19-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:14:22-65
+20    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:16:5-81
+21-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:16:22-78
+22    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+23    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+23-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:18:5-75
+23-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:18:22-72
+24
+25    <!-- baidusdk -->
+26    <uses-permission android:name="android.permission.CAMERA" />
+26-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:21:5-65
+26-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:21:22-62
+27    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+27-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:22:5-80
+27-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:22:22-77
+28
+29    <uses-feature android:name="android.hardware.camera" />
+29-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:23:5-60
+29-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:23:19-57
+30    <uses-feature android:name="android.hardware.camera.autofocus" />
+30-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:24:5-70
+30-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:24:19-67
+31
+32    <!-- TODO 集成：1.1、添加数据SDK和推送SDK需要的权限 -->
+33    <!-- 比目数据SDK所需的权限 -->
+34    <!-- 允许联网 -->
+35    <uses-permission android:name="android.permission.INTERNET" />
+35-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:8:5-67
+35-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:8:22-64
+36    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+37    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+37-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:10:5-79
+37-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:10:22-76
+38    <!-- 获取wifi网络状态的信息 -->
+39    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+39-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:12:5-76
+39-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:12:22-73
+40    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+41    <uses-permission android:name="android.permission.WAKE_LOCK" />
+41-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:14:5-68
+41-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:14:22-65
+42    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+43    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+43-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:16:5-81
+43-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:16:22-78
+44    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+45    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+45-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:18:5-75
+45-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:18:22-72
+46
+47    <!-- 推送所需的权限 -->
+48    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+48-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:43:5-79
+48-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:43:22-76
+49    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+49-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:44:5-81
+49-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:44:22-78
+50    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 蓝牙权限 -->
+50-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:15:5-76
+50-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:15:22-73
+51    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+51-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:26:5-74
+51-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:26:22-71
+52    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- 定位权限 -->
+52-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:27:5-68
+52-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:27:22-65
+53    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+53-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:29:5-81
+53-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:29:22-78
+54    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 前台服务，兼容9.0 -->
+54-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:30:5-79
+54-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:30:22-76
+55    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- 悬浮窗 -->
+55-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:35:5-77
+55-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:35:22-74
+56    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- APK安装 -->
+56-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:37:5-78
+56-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:37:22-75
+57    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+57-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:39:5-41:47
+57-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:40:9-59
+58    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 震动 -->
+58-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:42:5-83
+58-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:42:22-80
+59    <uses-permission android:name="android.permission.VIBRATE" />
+59-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:44:5-66
+59-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:44:22-63
+60    <uses-permission android:name="android.permission.CALL_PHONE" />
+60-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:47:5-69
+60-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:47:22-66
+61    <uses-permission android:name="android.permission.SEND_SMS" />
+61-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:48:5-67
+61-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:48:22-64
+62    <uses-permission android:name="android.permission.READ_SMS" />
+62-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:49:5-67
+62-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:49:22-64
+63    <uses-permission android:name="android.permission.READ_CONTACTS" />
+63-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:50:5-72
+63-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:50:22-69
+64    <uses-permission android:name="android.permission.READ_CALENDAR" />
+64-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:51:5-72
+64-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:51:22-69
+65    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 修改手机状态 -->
+65-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:52:5-71
+65-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:52:22-68
+66    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+66-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:54:5-56:47
+66-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:55:9-61
+67    <uses-permission android:name="android.permission.FLASHLIGHT" />
+67-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:59:5-69
+67-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:59:22-66
+68
+69    <uses-feature android:name="android.hardware.camera.flash" /> <!-- 进程杀死 -->
+69-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:63:5-66
+69-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:63:19-63
+70    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" /> <!-- 状态栏权限 -->
+70-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:66:5-84
+70-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:66:22-81
+71    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" /> <!-- 在SDCard中创建与删除文件权限 -->
+71-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:68:5-76
+71-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:68:22-73
+72    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> <!-- 修改系统设置 -->
+72-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:71:5-73:47
+72-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:72:9-68
+73    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+73-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:75:5-77:47
+73-->[com.github.xuexiangjys.XUtil:xutil-sub:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\298f58cf574d8628c48676dbfd6964cc\jetified-xutil-sub-1.1.7\AndroidManifest.xml:76:9-57
+74
+75    <application
+75-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:47:5-131:19
+76        android:name="com.qianyri.facepay.app.App"
+76-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:48:9-32
+77        android:allowBackup="true"
+77-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:49:9-35
+78        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+78-->[androidx.core:core:1.3.0-beta01] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\a13b1183d3ca1cfb7ebf0de0c4058f8f\core-1.3.0-beta01\AndroidManifest.xml:24:18-86
+79        android:debuggable="true"
+80        android:icon="@mipmap/ic_launcher"
+80-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:50:9-43
+81        android:label="@string/app_name"
+81-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:51:9-41
+82        android:roundIcon="@mipmap/ic_launcher_round"
+82-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:52:9-54
+83        android:supportsRtl="true"
+83-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:53:9-35
+84        android:theme="@style/XuiTheme" >
+84-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:54:9-40
+85        <activity android:name="com.qianyri.facepay.activity.StartActivity" >
+85-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:55:9-61:20
+85-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:55:19-57
+86            <intent-filter>
+86-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:56:13-60:29
+87                <action android:name="android.intent.action.MAIN" />
+87-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:57:17-69
+87-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:57:25-66
+88
+89                <category android:name="android.intent.category.LAUNCHER" />
+89-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:59:17-77
+89-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:59:27-74
+90            </intent-filter>
+91        </activity>
+92        <activity android:name="com.qianyri.facepay.activity.LoginActivity" />
+92-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:62:9-60
+92-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:62:19-57
+93        <activity android:name="com.qianyri.facepay.activity.MainActivity" />
+93-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:63:9-59
+93-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:63:19-56
+94        <activity android:name="com.qianyri.facepay.activity.DetectLoginActivity" />
+94-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:64:9-66
+94-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:64:19-63
+95        <activity android:name="com.qianyri.facepay.activity.RegActivity" />
+95-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:65:9-58
+95-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:65:19-55
+96        <activity android:name="com.qianyri.facepay.activity.PayActivity" />
+96-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:66:9-58
+96-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:66:19-55
+97        <activity android:name="com.qianyri.facepay.activity.FaceDetectActivity" />
+97-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:67:9-65
+97-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:67:19-62
+98        <activity android:name="com.qianyri.facepay.activity.PersonActivity" />
+98-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:68:9-61
+98-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:68:19-58
+99        <activity android:name="com.qianyri.facepay.activity.WaitActivity" />
+99-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:69:9-59
+99-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:69:19-56
+100        <!-- TODO 集成：1.2、添加推送所需要的服务和广播 -->
+101
+102        <service
+102-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:73:9-81:19
+103            android:name="cn.bmob.push.lib.service.PushService"
+103-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:75:13-64
+104            android:exported="true"
+104-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:77:13-36
+105            android:label="PushService"
+105-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:74:13-40
+106            android:process=":bmobpush" >
+106-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:76:13-40
+107            <intent-filter>
+107-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:78:13-80:29
+108                <action android:name="cn.bmob.push.lib.service.PushService" />
+108-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:79:17-78
+108-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:79:25-76
+109            </intent-filter>
+110        </service>
+111
+112        <!-- 用于进程保活 -->
+113        <service
+113-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:84:9-87:19
+114            android:name="cn.bmob.push.lib.service.PushNotifyService"
+114-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:85:13-70
+115            android:process=":bmobpush" >
+115-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:86:13-40
+116        </service>
+117
+118        <receiver android:name="cn.bmob.push.PushReceiver" >
+118-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:89:9-98:20
+118-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:89:19-59
+119            <intent-filter>
+119-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:90:13-97:29
+120
+121                <!-- 系统启动完成后会调用 -->
+122                <action android:name="android.intent.action.BOOT_COMPLETED" />
+122-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:92:17-79
+122-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:92:25-76
+123                <!-- 解锁完成后会调用 -->
+124                <action android:name="android.intent.action.USER_PRESENT" />
+124-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:94:17-77
+124-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:94:25-74
+125                <!-- 监听网络连通性 -->
+126                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+126-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:96:17-79
+126-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:96:25-76
+127            </intent-filter>
+128        </receiver>
+129
+130        <!-- 第3步中创建的消息接收器，在这里进行注册 -->
+131        <receiver android:name="com.qianyri.facepay.receiver.PushMessageReceiver" >
+131-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:101:9-105:20
+131-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:101:19-63
+132            <intent-filter>
+132-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:102:13-104:29
+133                <action android:name="cn.bmob.push.action.MESSAGE" />
+133-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:103:17-69
+133-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:103:25-67
+134            </intent-filter>
+135        </receiver>
+136
+137        <meta-data
+137-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:107:9-110:21
+138            android:name="BMOB_PUSH_CLASS"
+138-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:108:13-43
+139            android:value=".receiver.PushMessageReceiver" >
+139-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:109:13-58
+140        </meta-data>
+141
+142        <!-- 接收心跳和唤醒的广播，要和PushService运行在同个进程 -->
+143        <receiver
+143-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:114:9-123:20
+144            android:name="cn.bmob.push.PushNotifyReceiver"
+144-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:115:13-59
+145            android:process=":bmobpush" >
+145-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:116:13-40
+146            <intent-filter>
+146-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:117:13-122:29
+147
+148                <!-- 接收心跳广播的action -->
+149                <action android:name="cn.bmob.push.action.HEARTBEAT" />
+149-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:119:17-72
+149-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:119:25-69
+150                <!-- 接收唤醒广播的action -->
+151                <action android:name="cn.bmob.push.action.NOTIFY" />
+151-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:121:17-69
+151-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:121:25-66
+152            </intent-filter>
+153        </receiver>
+154
+155        <provider
+155-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:125:9-129:20
+156            android:name="cn.bmob.v3.util.BmobContentProvider"
+156-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:126:13-63
+157            android:authorities="com.qianyri.facepay.BmobContentProvider" >
+157-->D:\Works\Facepay\app\src\main\AndroidManifest.xml:127:13-74
+158        </provider>
+159
+160        <activity
+160-->[com.github.xuexiangjys:XUI:1.1.3] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\4a59dfabea75246a76bef599f29d8181\jetified-XUI-1.1.3\AndroidManifest.xml:10:9-12:75
+161            android:name="com.xuexiang.xui.widget.imageview.preview.ui.PreviewActivity"
+161-->[com.github.xuexiangjys:XUI:1.1.3] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\4a59dfabea75246a76bef599f29d8181\jetified-XUI-1.1.3\AndroidManifest.xml:11:13-88
+162            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+162-->[com.github.xuexiangjys:XUI:1.1.3] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\4a59dfabea75246a76bef599f29d8181\jetified-XUI-1.1.3\AndroidManifest.xml:12:13-72
+163        <activity
+163-->[com.github.xuexiangjys:XUI:1.1.3] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\4a59dfabea75246a76bef599f29d8181\jetified-XUI-1.1.3\AndroidManifest.xml:13:9-15:75
+164            android:name="com.xuexiang.xui.widget.imageview.preview.ui.VideoPlayerActivity"
+164-->[com.github.xuexiangjys:XUI:1.1.3] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\4a59dfabea75246a76bef599f29d8181\jetified-XUI-1.1.3\AndroidManifest.xml:14:13-92
+165            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+165-->[com.github.xuexiangjys:XUI:1.1.3] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\4a59dfabea75246a76bef599f29d8181\jetified-XUI-1.1.3\AndroidManifest.xml:15:13-72
+166        <activity
+166-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:19:9-23:75
+167            android:name="com.xuexiang.xutil.system.PermissionUtils$PermissionActivity"
+167-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:20:13-88
+168            android:configChanges="orientation|keyboardHidden|screenSize"
+168-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:21:13-74
+169            android:theme="@style/XUtil_Activity_Translucent"
+169-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:22:13-62
+170            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+170-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:23:13-72
+171
+172        <provider
+172-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:25:9-33:20
+173            android:name="androidx.core.content.FileProvider4Utils"
+173-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:26:13-68
+174            android:authorities="com.qianyri.facepay.xutil.provider"
+174-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:27:13-66
+175            android:exported="false"
+175-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:28:13-37
+176            android:grantUriPermissions="true" >
+176-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:29:13-47
+177            <meta-data
+177-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:30:13-32:64
+178                android:name="android.support.FILE_PROVIDER_PATHS"
+178-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:31:17-67
+179                android:resource="@xml/xutil_provider_paths" />
+179-->[com.github.xuexiangjys.XUtil:xutil-core:1.1.7] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\d23d56b3847495a4caaa2d4f3bc3fe2f\jetified-xutil-core-1.1.7\AndroidManifest.xml:32:17-61
+180        </provider>
+181        <provider
+181-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\a7777210eeae7ec0839470505116d148\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+182            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+182-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\a7777210eeae7ec0839470505116d148\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+183            android:authorities="com.qianyri.facepay.lifecycle-process"
+183-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\a7777210eeae7ec0839470505116d148\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+184            android:exported="false"
+184-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\a7777210eeae7ec0839470505116d148\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+185            android:multiprocess="true" />
+185-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Qianyri\.gradle\caches\transforms-2\files-2.1\a7777210eeae7ec0839470505116d148\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+186    </application>
+187
+188</manifest>

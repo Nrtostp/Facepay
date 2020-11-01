@@ -1,0 +1,3 @@
+rootProject.name='Facepay'
+include ':app'
+include ':facesdk'
